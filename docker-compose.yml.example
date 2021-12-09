@@ -1,0 +1,27 @@
+---
+version: "2.1"
+
+services:
+  noip-rfc2136-2:
+    image: noip-rfc2136
+    container_name: noip-rfc2136
+    environment:
+      - PUID=5000
+      - PGID=5000
+      - TZ=Europe/London
+      - log_level=INFO
+      - dns_nameserver=198.51.100.10
+      - dns_zone=example.org.
+      - dns_ttl=300
+      - dns_tsig_key_name=key.
+      - dns_tsig_key_secret="u/ULUGT0p7gP44XYEVkWzTv3fKiweURD9PyJ4vqMhZQ="
+      - listen_host=127.0.0.1
+      - listen_port=8000
+      - ssl_enabled=False
+      - basic_auth_enabled=False
+      - basic_auth_user=user
+      - basic_auth_pass=password
+    ports:
+      - 8000:8000/tcp
+    restart: unless-stopped
+

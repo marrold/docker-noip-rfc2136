@@ -12,7 +12,7 @@ Define the following as environment variables in your docker-compose file:
  * `dns_zone`: The zone you want to update
  * `dns_ttl`: TTL of the record
  * `dns_tsig_key_name`: String containing the TSIG key name
- * `dns_tsig_key_secret`: Base64 encoded string containing the TSIG key secret 'aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1vSGc1U0pZUkhBMA=='
+ * `dns_tsig_key_secret`: Base64 encoded string containing the TSIG key secret
 
 ### HTTP server config
  * `listen_host`: The IP address the HTTP should bind to. Set to `None` to listen on ALL addresses (not recommended).

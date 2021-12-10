@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
 exec \
-        s6-setuidgid abc python3 /opt/noip-rfc2136/noip-rfc2136.py
+        s6-setuidgid abc python3 /opt/venv/noip-rfc2136.py

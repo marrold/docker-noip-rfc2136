@@ -1,6 +1,9 @@
 # docker-noip-rfc2136
 A simple container for running [noip-rfc2136](https://github.com/frillip/noip-rfc2136) - a "Simple HTTP(S) server that pretends to be a No-IP compatible DynDNS service, but actually performs RFC2136 updates to a DNS server."
 
+## Source
+The Dockerfile and associated configuration can be found on [github](https://github.com/marrold/docker-noip-rfc2136)
+
 ## Usage
 Define the following as environment variables in your docker-compose file:
 

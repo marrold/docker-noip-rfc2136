@@ -2,8 +2,8 @@
 version: "2.1"
 
 services:
-  noip-rfc2136-2:
-    image: noip-rfc2136
+  noip-rfc2136:
+    image: marrold/docker_noip_rfc2136:latest
     container_name: noip-rfc2136
     environment:
       - PUID=5000

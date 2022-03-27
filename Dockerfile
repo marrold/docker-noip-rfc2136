@@ -7,7 +7,7 @@ RUN apt-get update -yq && \
     apt-get -yq --no-install-recommends install gcc git python3 python3-pip python3-setuptools python3-dev python3-venv && \
     apt-get clean && \
     cd /opt && \
-    git clone https://github.com/marrold/noip-rfc2136.git && \
+    git clone https://github.com/frillip/noip-rfc2136.git && \
     cd ./noip-rfc2136 && \
     python3 -m venv $VIRTUAL_ENV && \
     python3 -m pip install  --upgrade pip setuptools wheel && \
@@ -25,7 +25,6 @@ COPY root/ /
 RUN apt-get update -yq && \
     apt-get -yq --no-install-recommends install iputils-ping dnsutils python3 python3-venv && \
     apt-get clean
-
 
 EXPOSE 8000
 

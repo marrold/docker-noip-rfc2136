@@ -9,18 +9,18 @@ services:
       - PUID=5000
       - PGID=5000
       - TZ=Europe/London
-      - log_level=INFO
-      - dns_nameserver=198.51.100.10
-      - dns_zone=example.org.
-      - dns_ttl=300
-      - dns_tsig_key_name=key.
-      - dns_tsig_key_secret="u/ULUGT0p7gP44XYEVkWzTv3fKiweURD9PyJ4vqMhZQ="
-      - listen_host=127.0.0.1
-      - listen_port=8000
-      - ssl_enabled=False
-      - basic_auth_enabled=False
-      - basic_auth_user=user
-      - basic_auth_pass=password
+      - NOIP_RFC2136_LOG_LEVEL=INFO
+      - NOIP_RFC2136_DNS_NAMESERVER=198.51.100.10
+      - NOIP_RFC2136_DNS_ZONE=example.org.
+      - NOIP_RFC2136_DNS_TTL=300
+      - NOIP_RFC2136_DNS_TSIG_KEY_NAME=key.
+      - NOIP_RFC2136_DNS_TSIG_KEY_SECRET="u/ULUGT0p7gP44XYEVkWzTv3fKiweURD9PyJ4vqMhZQ="
+      - NOIP_RFC2136_LISTEN_HOST=127.0.0.1
+      - NOIP_RFC2136_LISTEN_PORT=8000
+      - NOIP_RFC2136_HTTPS_ENABLED=False
+      - NOIP_RFC2136_AUTH_ENABLED=False
+      - NOIP_RFC2136_BASIC_AUTH_USERNAME=user
+      - NOIP_RFC2136_BASIC_AUTH_PASSWORD=password
     ports:
       - 8000:8000/tcp
     restart: unless-stopped
